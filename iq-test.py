@@ -1,10 +1,17 @@
 """
-
-iq_test("2 4 7 8 10") => 3 // Third number is odd, while the rest of the numbers are even
-
-iq_test("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
-
+examples:
+ iq_test("2 4 7 8 10") => 3 // Third number is odd, while the rest of the numbers are even
+ iq_test("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
 """
+def iq_test(numbers):
+    """
+    return the position of number which differ from others
+    """
+    numbers = [int(i)%2 for i in numbers.split()]
+    if numbers.count(0) > 1:
+        return numbers.index(1)+1
+    else:
+        return numbers.index(0)+1
 
 """
 # my solution
@@ -21,12 +28,4 @@ def iq_test(numbers):
                 return k+1
         k+=1
     return len(nums)
-    
 """
-
-def iq_test(n):
-    n = [int(i)%2 for i in n.split()]
-    if n.count(0)>1:
-        return n.index(1)+1
-    else:
-        return n.index(0)+1

@@ -5,7 +5,7 @@ accum("cwAt")    # "C-Ww-Aaa-Tttt"
 """
 
 """
-# мое решение
+РјРѕРµ СЂРµС€РµРЅРёРµ
 
 def accum(s):
     result = ''
@@ -16,10 +16,10 @@ def accum(s):
             result += '-'
         k+=1
     return result
-    
 """
 
-# Best practices
-
-def accum(s):
-    return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
+def accum(string):
+    """
+    best practices
+    """
+    return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(string))

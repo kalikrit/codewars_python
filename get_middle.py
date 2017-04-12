@@ -1,13 +1,12 @@
 """
-на входе строка s 0 < len(s) < 100
-надо вернуть середину строки:
-  'es' для 'test'
-  'a' для 'a'
-  'a' для 'bac'
+РЅР° РІС…РѕРґРµ СЃС‚СЂРѕРєР° s 0 < len(s) < 100
+РЅСѓР¶РЅРѕ РІРµСЂРЅСѓС‚СЊ СЃРµСЂРµРґРёРЅСѓ СЃС‚СЂРѕРєРё
+  'test' => 'es'
+  'a' => 'a'
+  'bac' => 'a'
 """
-
-'''
-# мое решение
+"""
+РјРѕРµ СЂРµС€РµРЅРёРµ
 
 def get_middle(s):
     midx = len(s)//2
@@ -15,9 +14,10 @@ def get_middle(s):
         return s[midx-1:midx+1]
     else:
         return s[midx:midx+1]
-'''        
-    
-# best practices
+"""
 
-def get_middle(s):
-   return s[(len(s)-1)/2:len(s)/2+1]
+def get_middle(string):
+    """
+    best practices
+    """
+    return string[(len(string)-1)/2 : len(string)/2+1]
