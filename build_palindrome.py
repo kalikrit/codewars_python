@@ -39,13 +39,16 @@ def build_palindrome(string):
 """
 
 
-def build_palindrome(str):
+def build_palindrome(some_str):
     """
     best practices
     """
     suf = ""
-    for c in str:
-        pal = str + suf
+    for let in some_str:
+        pal = some_str + suf
         if pal == pal[::-1]:
             return pal
-        suf = c + suf
+        suf = let + suf
+
+
+# print(build_palindrome('abcd'))
