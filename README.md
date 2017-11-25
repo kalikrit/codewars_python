@@ -1,7 +1,10 @@
 # codewars_python
+# checkio
 
 Мой код на python на интересном ресурсе www.codewars.com
 мой профиль https://www.codewars.com/users/kalikrit
+
+и на игровом ресурсе https://py.checkio.org/
 
 я начал "тренироваться" в конце марта 2017, прошел 8 кат и получил 7 кью )
 
